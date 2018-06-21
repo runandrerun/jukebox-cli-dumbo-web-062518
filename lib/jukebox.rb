@@ -23,7 +23,7 @@ def play(songs)
   users_input = gets.downcase.chomp.to_i
   songs.each do |choice|
     if users_input == choice
-      puts "Playing #{songs[choice]}"
+      puts "Playing #{choice}"
     else
       puts "Invalid input, please try again"
     end
