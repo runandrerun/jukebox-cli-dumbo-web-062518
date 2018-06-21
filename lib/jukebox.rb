@@ -25,7 +25,7 @@ def play(songs)
     if users_input == choice
       puts "Playing #{songs[choice]}"
     else
-      puts out "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end
 end
 
