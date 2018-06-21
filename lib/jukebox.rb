@@ -18,8 +18,13 @@ def help
   puts "- exit : exits this program"
 end
 
-def play
-  
+def play(songs)
+  puts "Please enter a song name or number: "
+  users_input = gets.chomp
+  if users_input == songs.any?
+    puts out "Playing #{songs[users_input]}"
+  else
+    puts out "Invalid input, please try again"
 end
 
 def list(songs)
