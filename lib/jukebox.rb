@@ -46,8 +46,8 @@ def run
   help
   puts "Please enter a command: "
   user_input = gets.chomp
-  until user_input == "exit" || user_input == "Exit" || user_input == "EXIT"
-  play
-end
+  until user_input == "exit" || user_input == "Exit" 
+    play
+  end
   
 end
