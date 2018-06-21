@@ -25,6 +25,7 @@ def play(songs)
     puts out "Playing #{songs[users_input]}"
   else
     puts out "Invalid input, please try again"
+  end
 end
 
 def list(songs)
