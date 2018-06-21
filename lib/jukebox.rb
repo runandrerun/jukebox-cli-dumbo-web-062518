@@ -23,12 +23,10 @@ def play(songs)
   users_input = gets.chomp
   songs.each do |choice|
     if users_input == choice
-      puts 
-  if users_input == songs.any?
-    puts "Playing #{songs[users_input]}"
-  else
-    puts out "Invalid input, please try again"
-  end
+      puts "Playing #{songs[choice]}"
+    else
+      puts out "Invalid input, please try again"
+    end
 end
 
 def list(songs)
