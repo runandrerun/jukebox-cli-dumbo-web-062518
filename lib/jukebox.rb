@@ -22,8 +22,12 @@ def play
   
 end
 
-def list
-  
+def list(songs)
+  counter = 1
+  songs.each do |choice|
+    puts "#{counter}. #{choice}"
+    counter += 1
+  end
 end
 
 def exit_jukebox
