@@ -47,6 +47,11 @@ def run(songs)
   puts "Please enter a command: "
   user_input = gets.chomp
   if user_input == "play"
-    until 
-  
+    play(songs)
+  elsif user_input == "help"
+    help
+    user_input = gets.chomp
+  else user_input == "exit"
+    exit
+  end
 end
