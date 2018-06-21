@@ -20,7 +20,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number: "
-  users_input = gets.chomp
+  users_input = gets.downcase.chomp
   songs.each do |choice|
     if users_input == choice
       puts "Playing #{songs[choice]}"
